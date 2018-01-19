@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainheader"
+    android:background="@drawable/home_screen_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/rltv"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/header_bg"
+        >
+
+        <TextView
+            android:id="@+id/action_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="ADD"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:id="@+id/action_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/action_logo"
+            android:paddingLeft="10dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/navigationdrawer" />
+
+        <RelativeLayout
+            android:id="@+id/badge_layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="21dp"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rltv">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="PHOTO :"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorAccent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="7dp"
+                android:padding="10dp"
+                android:background="@drawable/edit1">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Proof Upload"
+
+                            android:layout_marginTop="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:fontFamily="roboto-light"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:layout_gravity="center"
+
+                            android:layout_weight="0.2"
+                            android:layout_marginTop="6dp"
+                            android:textSize="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/photochoosefilebutton"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1.8"
+                            android:background="@drawable/edit1"
+                            android:paddingRight="5dp"
+                            android:text="Choose File" />
+
+                    </LinearLayout>
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginTop="6dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="12dp"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            android:fontFamily="roboto-light"
+                            android:id="@+id/OffenceType"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+
+                            android:layout_weight="0.2"
+                            android:layout_marginTop="6dp"
+                            android:textSize="20dp"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/phototext"
+                            android:layout_weight="1.8"
+                            android:textSize="14sp"
+                            android:text="No file Choose"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:paddingRight="5dp"
+                            />
+
+                    </LinearLayout>
+                </TableRow>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/uploadimage"
+                    android:src="@drawable/aadhar_image"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="3"
+
+                android:orientation="horizontal">
+                <Space
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    />
+                <Button
+                    android:text="Submit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:id="@+id/documentsaddnew"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

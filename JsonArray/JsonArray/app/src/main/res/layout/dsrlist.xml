@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/owner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/vsearch"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/edit"
+    android:drawingCacheQuality="high"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="Roboto-light"
+        android:text="Owner Name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="80dp"
+
+        android:layout_marginBottom="10dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/OwnerNamevalue"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/Addressvalue"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/textView8"
+
+        android:focusable="false"
+        android:layout_marginRight="2dp"
+        android:inputType="textMultiLine"
+        android:hint="NA"
+        android:textColor="#135B97"
+        android:textSize="16sp"
+        android:fontFamily="Roboto-light"
+
+        android:layout_below="@+id/textView8"
+        android:background="@null"
+
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view1"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/view1"
+        android:fontFamily="Roboto-light"
+        android:text="Address"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Fathervalue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignRight="@+id/OwnerNamevalue"
+        android:layout_toRightOf="@+id/textView5"
+        android:fontFamily="Roboto-light"
+        android:hint="NA"
+        android:paddingLeft="2dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#135B97"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:fontFamily="Roboto-light"
+        android:text="Phone Number"
+
+        android:layout_below="@+id/OwnerNamevalue"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/OwnerNamevalue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view1"
+        android:layout_toRightOf="@+id/textView5"
+        android:fontFamily="Roboto-light"
+        android:hint="NA"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#135B97"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+

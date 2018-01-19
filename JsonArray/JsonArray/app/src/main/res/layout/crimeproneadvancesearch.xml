@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zone"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="10dp"
+                android:textColor="#000"
+                android:fontFamily="roboto-light"
+                android:id="@+id/OffenceType"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/Accedittypeedit"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/spinner"
+                android:paddingRight="5dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Divison:"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="10dp"
+                android:textColor="#000"
+                android:fontFamily="roboto-light"
+                android:id="@+id/OffenceType"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/Accedittypeedit"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/spinner"
+                android:paddingRight="5dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offence Type:"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="10dp"
+                android:textColor="#000"
+                android:fontFamily="roboto-light"
+                android:id="@+id/OffenceType"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/Accedittypeedit"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/spinner"
+                android:paddingRight="5dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Type:"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="10dp"
+                android:textColor="#000"
+                android:fontFamily="roboto-light"
+                android:id="@+id/OffenceType"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/Accedittypeedit"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/spinner"
+                android:paddingRight="5dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time duration:"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="10dp"
+                android:textColor="#000"
+                android:fontFamily="roboto-light"
+                android:id="@+id/OffenceType"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/Accedittypeedit"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/spinner"
+                android:paddingRight="5dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:id="@+id/thematictotal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From Date:"
+                    android:fontFamily="roboto-light"
+                    android:textSize="10sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/fromdatetext" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/calendar_icon"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/fromdateedit"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit"
+                    android:drawablePadding="8dip"
+
+                    />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="To Date:"
+
+                    android:fontFamily="roboto-light"
+                    android:layout_marginTop="6dp"
+                    android:textSize="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/todatetext"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit"
+                    android:id="@+id/todateedit"
+                    android:layout_marginTop="10dp"
+                    android:drawableRight="@drawable/calendar_icon"
+                    />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radius"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="10dp"
+                android:textColor="#000"
+                android:fontFamily="roboto-light"
+                android:id="@+id/OffenceType"/>
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/Accedittypeedit"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/spinner"
+                android:paddingRight="5dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration:"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="10dp"
+                android:textColor="#000"
+                android:fontFamily="roboto-light"
+                android:id="@+id/OffenceType"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/Accedittypeedit"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/spinner"
+                android:paddingRight="5dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+

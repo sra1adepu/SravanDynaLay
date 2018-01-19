@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainheader"
+    android:background="@drawable/home_screen_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/rltv"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/header_bg"
+        >
+        <TextView
+            android:id="@+id/action_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="IPIH"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            />
+        <ImageView
+            android:id="@+id/action_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/action_logo"
+            android:paddingLeft="10dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/navigationdrawer" />
+
+        <RelativeLayout
+            android:id="@+id/badge_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/badge_layout3"
+
+            android:layout_marginRight="5dp"
+            android:paddingBottom="0dp"
+            android:paddingTop="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            >
+        </RelativeLayout>
+    </RelativeLayout>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/rltv"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".5">
+
+            <ImageView
+                android:id="@+id/uploadimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/aadhar_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="PERSONAL DETAILS"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.2"
+                        android:fontFamily="roboto-light"
+                        android:text="Name"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight=".2"
+                        android:text=":"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.6"
+                        android:textColor="#135b97"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.2"
+                        android:fontFamily="roboto-light"
+                        android:text="Father Name"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight=".2"
+                        android:text=":"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/fathername"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.6"
+                        android:textColor="#135b97"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.2"
+                        android:fontFamily="roboto-light"
+                        android:text="DOB"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight=".2"
+                        android:text=":"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/dob"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.6"
+                        android:textColor="#135b97"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.2"
+                        android:fontFamily="roboto-light"
+                        android:text="Occupation"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight=".2"
+                        android:text=":"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/occupation"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.6"
+                        android:textColor="#135b97" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.2"
+                        android:fontFamily="roboto-light"
+                        android:text="Age"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight=".2"
+                        android:text=":"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/agevalue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.6"
+                        android:textColor="#135b97"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </TableRow>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UNIQUE IDENTIFIERS"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card_background"
+        >
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="PAN Card No"
+                android:fontFamily="roboto-light"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".2"
+                android:text=":"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textColor="#135b97"
+                android:layout_marginRight="10dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.6"
+                android:id="@+id/pancardno"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="Voter ID"
+                android:fontFamily="roboto-light"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".2"
+                android:text=":"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textColor="#135b97"
+                android:layout_marginRight="10dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.6"
+                android:id="@+id/voterid"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="Aadhar Card"
+                android:fontFamily="roboto-light"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".2"
+                android:text=":"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textColor="#135b97"
+                android:layout_marginRight="10dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.6"
+                android:id="@+id/aadharcard"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.2"
+                android:text="GAS Consumer ID"
+                android:fontFamily="roboto-light"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".2"
+                android:text=":"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textColor="#135b97"
+                android:layout_marginRight="10dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.6"
+                android:id="@+id/consumerid"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="Driving Lincence No"
+                android:fontFamily="roboto-light"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".2"
+                android:text=":"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textColor="#135b97"
+                android:layout_marginRight="10dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.6"
+                android:id="@+id/drivinglicenceno"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.2"
+                android:text="Electricity No"
+                android:fontFamily="roboto-light"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".2"
+                android:text=":"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:textColor="#135b97"
+                android:layout_marginRight="10dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.6"
+                android:id="@+id/sno"/>
+        </LinearLayout>
+    </TableRow>
+    </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorAccent"
+    android:text="FAMILY MEMBERS"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:textStyle="bold"
+    android:textSize="18sp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relation"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DOB"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+    </TableLayout>
+
+
+</LinearLayout>
+</ScrollView>
+    </RelativeLayout>

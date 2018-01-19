@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/card_background">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Relation Type"
+                android:textColor="@color/colorAccent"
+
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="12dp"
+                android:layout_weight="1"
+
+                android:fontFamily="roboto-light"
+               />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_gravity="center"
+
+                android:layout_weight="0.2"
+                android:layout_marginTop="6dp"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/realtiontypetext"
+                android:layout_weight="1.8"
+                android:textColor="#135b97"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+
+                android:paddingRight="5dp"
+                />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="12dp"
+                android:layout_weight="1"
+
+                android:fontFamily="roboto-light"
+               />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_gravity="center"
+
+                android:layout_weight="0.2"
+                android:layout_marginTop="6dp"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/nametext"
+                android:layout_weight="1.8"
+
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#135b97"
+                android:paddingRight="5dp"
+                />
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mobile No"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="12dp"
+                android:layout_weight="1"
+
+                android:fontFamily="roboto-light"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_gravity="center"
+
+                android:layout_weight="0.2"
+                android:layout_marginTop="6dp"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/mobiletext"
+                android:layout_weight="1.8"
+                android:textColor="#135b97"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+
+                android:paddingRight="5dp"
+                />
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+
+                android:fontFamily="roboto-light"
+               />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_gravity="center"
+
+                android:layout_weight="0.2"
+                android:layout_marginTop="6dp"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/addresstext"
+                android:layout_weight="1.8"
+                android:textColor="#135b97"
+
+                android:layout_marginTop="20dp"
+
+                android:paddingRight="5dp"
+                />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:fontFamily="roboto-light"
+                android:text="Occupation"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_gravity="center"
+
+                android:layout_weight="0.2"
+                android:layout_marginTop="6dp"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/occupationtext"
+                android:layout_weight="1.8"
+                android:textColor="#135b97"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+
+                android:paddingRight="5dp"
+                />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/OffenceType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:fontFamily="roboto-light"
+                android:text="Any Proof"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_gravity="center"
+
+                android:layout_weight="0.2"
+                android:layout_marginTop="6dp"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/anyprooftext"
+                android:layout_weight="1.8"
+                android:textColor="#135b97"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+
+                android:paddingRight="5dp"
+                />
+        </LinearLayout>
+    </TableRow>
+</LinearLayout>

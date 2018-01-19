@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Licence No"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="4dp"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/licence"
+                    android:layout_weight="1.8"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Issued To"
+
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/issuedto"
+                    android:layout_weight="1.8"
+android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:paddingRight="5dp"
+                    />
+
+
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Issue"
+
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1.8"
+                    android:id="@+id/dateofissue"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:paddingRight="5dp"
+                    />
+
+
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Expiry"
+
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/dateofexpiary"
+                    android:layout_weight="1.8"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:paddingRight="5dp"
+                    />
+
+
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Issued By"
+
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/issuedby"
+                    android:layout_weight="1.8"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:paddingRight="5dp"
+                    />
+
+
+            </LinearLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/status"
+                    android:layout_weight="1.8"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:paddingRight="5dp"
+                    />
+
+
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Licence Status"
+
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/licencestatus"
+                    android:layout_weight="1.8"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Remark"
+
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/remark"
+                    android:layout_weight="1.8"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit1"
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Arm Status"
+
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    android:id="@+id/OffenceType"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+
+                <Spinner
+
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/armstatus"
+                    android:layout_weight="1.8"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tablerowsubtype"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Arm\nsubType"
+
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="10dp"
+                    android:layout_weight="0.5"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                   />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+
+                <Spinner
+
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/armsubtype"
+                    android:layout_weight="2.3"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ammunation Status"
+                android:textColor="#FF0463"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Weapon Issued"
+
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/weaponissued"
+                    android:layout_weight="1.8"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Poccessed Onetime"
+
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/poccesseonetime"
+                    android:layout_weight="1.8"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Purchasable ForYear"
+
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/purchasableforyear"
+                    android:layout_weight="1.8"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Issued"
+
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/issuededit"
+                    android:layout_weight="1.8"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit1"
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Available"
+
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:fontFamily="roboto-light"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="6dp"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/issuedavilable"
+                    android:layout_weight="1.8"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit1"
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
+        </TableRow>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+
+            android:orientation="horizontal">
+            <Space
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:text="Update"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:id="@+id/button"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:background="#FF0463"
+                android:layout_marginBottom="10dp"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

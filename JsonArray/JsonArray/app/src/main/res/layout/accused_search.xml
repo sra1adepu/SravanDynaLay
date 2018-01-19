@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainheader"
+    android:background="@drawable/home_screen_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/rltv"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/header_bg"
+        >
+        <TextView
+            android:id="@+id/action_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Accused Search"
+            android:fontFamily="roboto-light"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            />
+        <ImageView
+            android:id="@+id/action_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/action_logo"
+            android:paddingLeft="10dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/navigationdrawer" />
+
+        <RelativeLayout
+            android:id="@+id/badge_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/badge_layout3"
+
+            android:layout_marginRight="5dp"
+            android:paddingBottom="0dp"
+            android:paddingTop="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            >
+        </RelativeLayout>
+    </RelativeLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_below="@+id/rltv">
+   <TableRow
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginTop="10dp"
+       android:weightSum="3">
+       <EditText
+           android:layout_width="0dp"
+           android:layout_height="40dp"
+           android:layout_weight="1"
+           android:hint="  Name"
+           android:id="@+id/accusedname"
+           android:layout_marginRight="10dp"
+           android:background="@drawable/edit1"
+           />
+       <EditText
+           android:layout_width="0dp"
+           android:layout_height="40dp"
+           android:layout_weight="1"
+           android:hint="  AliasName"
+           android:id="@+id/accusedaliasname"
+           android:layout_marginRight="10dp"
+           android:background="@drawable/edit1"
+           />
+       <EditText
+           android:layout_width="0dp"
+           android:layout_height="40dp"
+           android:layout_weight="1"
+           android:hint="  Father Name"
+           android:id="@+id/fathername"
+           android:background="@drawable/edit1"
+           />
+   </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="3">
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="  PS"
+            android:id="@+id/psspinner"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/spinner"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:maxLength="3"
+            android:inputType="number"
+            android:hint="  Age From"
+            android:id="@+id/agefrom"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:maxLength="3"
+            android:inputType="number"
+            android:hint="  Age To"
+            android:id="@+id/ageto"
+            android:background="@drawable/edit1"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="  From Date"
+            android:id="@+id/fromdate"
+            android:focusable="false"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/calendar_icon"
+            android:background="@drawable/edit1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="  To Date"
+            android:focusable="false"
+            android:id="@+id/todate"
+            android:drawableRight="@drawable/calendar_icon"
+            android:background="@drawable/edit1"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="  Crime Number"
+            android:id="@+id/crimenumber"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="  Crime Location"
+            android:id="@+id/crimelocation"
+            android:background="@drawable/edit1"
+            />
+    </TableRow>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:textColor="#FFF"
+        android:text="search"
+        android:id="@+id/buttonsearch"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:id="@+id/accusedlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+    </ListView>
+</LinearLayout>
+</RelativeLayout>

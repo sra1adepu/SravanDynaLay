@@ -1,0 +1,884 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFFENDER:"
+        android:fontFamily="roboto-light"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/card_background"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:textSize="16sp"
+            android:text="OFFENDER DETAILS:"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="roboto-light"/>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Offender Name"
+                        android:layout_gravity="center"
+
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:gravity="top|bottom"
+                        android:textColor="#135b97"
+                        android:textSize="16sp"
+                        android:id="@+id/offendernametext"
+                        android:layout_weight="1.8"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:fontFamily="roboto-light"
+                        android:text="Aliases"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:gravity="top|bottom"
+                        android:id="@+id/aliasestext"
+                        android:layout_weight="1.8"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        />
+
+
+
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:fontFamily="roboto-light"
+                        android:text="DOB"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:gravity="top|bottom"
+                        android:id="@+id/dobtext"
+                        android:layout_weight="1.8"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        android:focusable="false"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Age"
+
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:gravity="top|bottom"
+                        android:id="@+id/agetext"
+                        android:layout_weight="1.8"
+                        android:maxLength="3"
+                        android:inputType="number"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile No"
+
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/mobilenotext"
+                        android:gravity="top|bottom"
+                        android:layout_weight="1.8"
+                        android:maxLength="12"
+                        android:inputType="number"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/emailtext"
+                        android:gravity="top|bottom"
+                        android:layout_weight="1.8"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="PSID"
+
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/psnametext"
+                        android:gravity="top|bottom"
+                        android:layout_weight="1.8"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/textView3"
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:fontFamily="roboto-light"
+                        android:text="Vehicle Details"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/vehicledetailstext"
+                        android:gravity="top|bottom"
+                        android:layout_weight="1.8"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Current Activity"
+
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/currentactivitytext"
+                        android:gravity="top|bottom"
+                        android:layout_weight="1.8"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Present Address"
+
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/presentaddressedit"
+                        android:layout_weight="1.8"
+                        android:gravity="top|bottom"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:fontFamily="roboto-light"
+                        android:text="Permanent Address"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/permanentaddresstext"
+                        android:layout_weight="1.8"
+                        android:gravity="top|bottom"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Offender House Owner"
+
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/offencehnedit"
+                        android:layout_weight="1.8"
+                        android:gravity="top|bottom"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:fontFamily="roboto-light"
+                        android:text="Date Of Last Arrest"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/dolaedit"
+                        android:layout_weight="1.8"
+                        android:gravity="top|bottom"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        android:focusable="false"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="PS Arrested"
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/psarrestededit"
+                        android:layout_weight="1.8"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:gravity="top|bottom"
+                        android:paddingRight="5dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Date Of Release"
+
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/doredit"
+                        android:layout_weight="1.8"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:gravity="top|bottom"
+                        android:paddingRight="5dp"
+                        android:focusable="false"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Modus Operandi"
+
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/motext"
+                        android:layout_weight="1.8"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        android:gravity="top|bottom"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Hostory Sheet"
+
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/hostorytext"
+                        android:layout_weight="1.8"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        android:gravity="top|bottom"
+                        />
+                </LinearLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Latest Photograph Collected"
+
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:textColor="#000"
+                        android:fontFamily="roboto-light"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_gravity="center"
+
+                        android:layout_weight="0.2"
+                        android:layout_marginTop="6dp"
+                        android:textSize="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/lpctext"
+                        android:layout_weight="1.8"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#135b97"
+                        android:layout_marginRight="10dp"
+                        android:paddingRight="5dp"
+                        android:gravity="top|bottom"
+                        />
+                </LinearLayout>
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
